@@ -4,6 +4,8 @@ body {
   padding: 0px;
   font-family: 'Montserrat', sans-serif;
   background-color: #f1f1f1;
+
+  scroll-behavior: smooth;
 }
 
 header {
@@ -52,17 +54,22 @@ header {
 .contacts_button:hover {
   background-color: aliceblue;
   color: #4170fe;
-
+  cursor: pointer;
   transition-duration: 300ms;
 }
 
 .contacts_text {
+  text-decoration: none;
   margin: auto;
   font-weight: 400;
   color: aliceblue;
   font-size: 1.2rem;
   width: fit-content;
   height: fit-content;
+}
+
+.contacts_text::hover {
+  cursor: pointer;
 }
 
 main {
@@ -247,4 +254,8 @@ main {
 
 .footer_map {
   border-radius: 10rem;
+}
+
+.footer_logo {
+  margin-bottom: 1rem;
 }
