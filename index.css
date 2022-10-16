@@ -253,7 +253,8 @@ main {
 }
 
 .footer_map {
-  border-radius: 10rem;
+  overflow: hidden;
+  border-radius: 1.5rem;
 }
 
 .footer_logo {
