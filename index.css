@@ -117,6 +117,9 @@ main {
 
   overflow: hidden;
 
+  background-repeat: no-repeat;
+  background-size: cover;
+
   padding-top: 3%;
   padding-bottom: 3%;
   padding-left: 3%;
@@ -129,13 +132,36 @@ main {
   justify-content: flex-start;
   flex: 0 0 25%;
 
+  z-index: 0;
+
   /* box-shadow: 2px 3px 0px #2f3347; */
   background-color: #f1f1f1;
 }
 
+.card1 {
+  background-image: url(./assets/1.svg);
+}
+
+.card2 {
+  background-image: url(./assets/2.svg);
+}
+
+.card3 {
+  background-image: url(./assets/3.svg);
+}
+
+.card4 {
+  background-image: url(./assets/4.svg);
+}
+.card5 {
+  background-image: url(./assets/5.svg);
+}
+.card6 {
+  background-image: url(./assets/6.svg);
+}
+
 .cards__card__text {
   margin: auto;
-
   z-index: 2;
 }
 
@@ -165,21 +191,11 @@ main {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  flex: 0 0 25%;
+  flex: 1 0 25%;
 
   row-gap: 3rem;
-  /* column-gap: 3rem; */
+  column-gap: 1rem;
   /* justify-content: space-between; */
-}
-
-.cards__card__bgnum {
-  position: absolute;
-  /* justify-self: left; */
-  /* font-weight: 700; */
-  /* font-size: 30rem; */
-  z-index: 0;
-  color: #f1f1f1;
-  overflow: hidden;
 }
 
 .cards__card__icon {
@@ -191,6 +207,7 @@ main {
   max-height: inherit;
   height: 100%;
   color: #4170fe;
+  z-index: 2;
 }
 
 .thirdBlock {
