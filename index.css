@@ -117,8 +117,8 @@ main {
 
   overflow: hidden;
 
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding-top: 3%;
+  padding-bottom: 3%;
   padding-left: 3%;
   padding-right: 3%;
 
@@ -126,13 +126,16 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  flex: 0 0 25%;
 
   /* box-shadow: 2px 3px 0px #2f3347; */
   background-color: #f1f1f1;
 }
 
 .cards__card__text {
+  margin: auto;
+
   z-index: 2;
 }
 
@@ -140,6 +143,10 @@ main {
   text-align: center;
   word-wrap: normal;
   z-index: 2;
+
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #2f3347;
 }
 
 .secondBlock_card_span {
@@ -151,20 +158,18 @@ main {
 .cards__wrapper {
   display: flex;
 
- width: 100%;
+  width: 100%;
   margin: auto;
   max-width: 1200px;
-
 
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   flex: 0 0 25%;
 
-  /* row-gap: 3rem; */
+  row-gap: 3rem;
   /* column-gap: 3rem; */
   /* justify-content: space-between; */
-
 }
 
 .cards__card__bgnum {
@@ -178,7 +183,6 @@ main {
 }
 
 .cards__card__icon {
-  margin: auto;
   max-height: 7rem;
   z-index: 2;
 }
@@ -186,7 +190,7 @@ main {
 .cards__card__icon svg {
   max-height: inherit;
   height: 100%;
-  margin: auto;
+  color: #4170fe;
 }
 
 .thirdBlock {
