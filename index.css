@@ -76,13 +76,13 @@ main {
   margin: auto;
 }
 
-.firstBlock {
+.info__container {
   height: calc(100vh - 3.8rem);
   display: flex;
   align-items: center;
 }
 
-.firstBlockWrapper {
+.info__wrapper {
   display: flex;
   align-items: center;
   margin: auto;
@@ -90,28 +90,28 @@ main {
   max-width: 1200px;
 }
 
-.firstBlock_text_h {
+.info__text h1 {
   color: #4170fe;
   font-size: 2.5rem;
 }
 
-.firstBlock_text_p {
+.info__text p {
   color: #2f3347;
   font-size: 1.3rem;
 }
 
-.firstBlock_image {
+.info__image {
   margin-left: 3rem;
   user-select: none;
 }
 
-.secondBlock {
+.cards__container {
   padding-top: 3rem;
   padding-bottom: 3rem;
   background-color: #2f3347;
 }
 
-.secondBlock_card {
+.cards__card {
   width: 13rem;
   height: 10rem;
 
@@ -132,7 +132,11 @@ main {
   background-color: #f1f1f1;
 }
 
-.secondBlock_card_text {
+.cards__card__text {
+  z-index: 2;
+}
+
+.cards__card__text p {
   width: fit-content;
   height: fit-content;
   text-align: center;
@@ -146,7 +150,7 @@ main {
   border-radius: 0.5rem;
 }
 
-.secondBlock_wrapper {
+.cards__wrapper {
   display: flex;
 
   flex-direction: row;
@@ -161,7 +165,7 @@ main {
   max-width: 1200px;
 }
 
-.backgroundNum {
+.cards__card__bgnum {
   position: absolute;
   justify-self: left;
   font-weight: 700;
@@ -171,7 +175,7 @@ main {
   overflow: hidden;
 }
 
-.secondBlock_card_icon {
+.cards__card__icon {
   margin: auto;
   width: 7rem;
   max-height: 7rem;
@@ -179,12 +183,8 @@ main {
   z-index: 2;
 }
 
-.sb_icon {
-  z-index: 2;
-}
-
-.secondBlock_card_icon_container {
-  width: 4rem;
+.cards__card__icon svg {
+  width: 100%;
 }
 
 .thirdBlock {
