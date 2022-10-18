@@ -112,15 +112,15 @@ main {
 }
 
 .cards__card {
-  width: 13rem;
-  height: 10rem;
+  /* width: 13rem; */
+  /* height: 10rem; */
 
   overflow: hidden;
 
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  padding-left: 4rem;
-  padding-right: 4rem;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 3%;
+  padding-right: 3%;
 
   border-radius: 1.5rem;
   display: flex;
@@ -137,10 +137,8 @@ main {
 }
 
 .cards__card__text p {
-  width: fit-content;
-  height: fit-content;
   text-align: center;
-
+  word-wrap: normal;
   z-index: 2;
 }
 
@@ -153,23 +151,27 @@ main {
 .cards__wrapper {
   display: flex;
 
-  flex-direction: row;
-  flex-wrap: wrap;
-
-  row-gap: 3rem;
-  column-gap: 3rem;
-  justify-content: space-between;
-
-  width: 100%;
+ width: 100%;
   margin: auto;
   max-width: 1200px;
+
+
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex: 0 0 25%;
+
+  /* row-gap: 3rem; */
+  /* column-gap: 3rem; */
+  /* justify-content: space-between; */
+
 }
 
 .cards__card__bgnum {
   position: absolute;
-  justify-self: left;
-  font-weight: 700;
-  font-size: 30rem;
+  /* justify-self: left; */
+  /* font-weight: 700; */
+  /* font-size: 30rem; */
   z-index: 0;
   color: #f1f1f1;
   overflow: hidden;
@@ -177,14 +179,14 @@ main {
 
 .cards__card__icon {
   margin: auto;
-  width: 7rem;
   max-height: 7rem;
-
   z-index: 2;
 }
 
 .cards__card__icon svg {
-  width: 100%;
+  max-height: inherit;
+  height: 100%;
+  margin: auto;
 }
 
 .thirdBlock {
