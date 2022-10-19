@@ -26,6 +26,10 @@ header {
   justify-content: space-between;
 }
 
+.container {
+  padding: 3rem 1rem;
+}
+
 .contacts {
   display: flex;
   justify-content: space-between;
@@ -77,19 +81,24 @@ main {
 }
 
 .info__container {
-  height: calc(100vh - 3.8rem);
+  height: calc(100vh - 9.8rem);
   display: flex;
   align-items: center;
 }
 
 .info__wrapper {
   display: flex;
+  width: 100%;
   align-items: center;
   margin: auto;
+  justify-content: space-between;
 
   max-width: 1200px;
 }
 
+.info__text {
+  max-width: 55%;
+}
 .info__text h1 {
   color: #4170fe;
   font-size: 2.5rem;
@@ -103,6 +112,11 @@ main {
 .info__image {
   margin-left: 3rem;
   user-select: none;
+}
+.info__image img {
+  border-radius: 1.5rem;
+
+  width: 100%;
 }
 
 .cards__container {
@@ -181,21 +195,42 @@ main {
   border-radius: 0.5rem;
 }
 
-.cards__wrapper {
+.cards__row {
   display: flex;
 
   width: 100%;
-  margin: auto;
-  max-width: 1200px;
 
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   flex: 1 0 25%;
-
   row-gap: 3rem;
   column-gap: 1rem;
   /* justify-content: space-between; */
+}
+
+.cards__column {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+  margin: auto;
+  max-width: 1200px;
+}
+
+.big {
+  flex-direction: row;
+}
+
+.big__text {
+  margin-left: 2rem;
+}
+
+.big__text h3 {
+  margin: 0px;
+}
+
+.big__text ul {
+  margin-top: 1%;
 }
 
 .cards__card__icon {
