@@ -13,6 +13,10 @@ header {
   background-color: #2f3347;
 }
 
+:root {
+  font-size: medium;
+}
+
 .header {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -244,13 +248,12 @@ main {
 }
 
 .cards__card__icon {
-  max-height: 7rem;
+  max-width: 7rem;
   z-index: 2;
 }
 
 .cards__card__icon svg {
-  max-height: inherit;
-  height: 100%;
+  width: 100%;
   color: #4170fe;
   z-index: 2;
 }
