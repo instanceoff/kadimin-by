@@ -69,10 +69,20 @@ header {
   transition-duration: 300ms;
 }
 
+.contacts_language {
+  color: #f1f1f1;
+  text-decoration: none;
+}
+.contacts_language:hover {
+  color: #4170fe;
+  text-decoration: none;
+}
+
 .contacts_text {
   text-decoration: none;
   margin: auto;
   margin-right: 1rem;
+  margin-left: 1rem;
   font-weight: 400;
   color: aliceblue;
   font-size: 1.2rem;
