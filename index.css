@@ -5,6 +5,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   background-color: #f1f1f1;
   scroll-behavior: smooth;
+  /* background-image: url(./assets/bgscheme.png); */
 }
 
 header {
@@ -85,7 +86,20 @@ header {
 
 main {
   margin: auto;
+  overflow: hidden;
+  background-image: url(./assets/bgscheme.png);
+  background-position: 0%;
+  background-repeat: no-repeat;
 }
+
+/* body::after {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: url(./assets/bgscheme.png);
+  opacity: 0.4;
+} */
 
 .info__container {
   height: calc(100vh - 9.8rem);
@@ -99,7 +113,6 @@ main {
   align-items: center;
   margin: auto;
   justify-content: space-between;
-
   max-width: 1200px;
 }
 
