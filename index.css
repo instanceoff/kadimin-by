@@ -415,6 +415,23 @@ main {
   }
 }
 
+@media all and (max-width: 680px) {
+  .logo {
+    display: none;
+  }
+  header {
+    flex-direction: row-reverse;
+  }
+  .header {
+    justify-content: flex-end;
+  }
+
+  .contacts_language {
+    margin: 0px;
+    margin-right: 1rem;
+  }
+}
+
 @media all and (max-width: 570px) {
   :root {
     /* font-size: x-small; */
@@ -436,11 +453,5 @@ main {
   }
   .cards__card {
     flex: 0 0 70%;
-  }
-  .header {
-    justify-content: flex-end;
-  }
-  .logo {
-    display: none;
   }
 }
