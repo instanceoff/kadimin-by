@@ -9,6 +9,8 @@ body {
 }
 
 header {
+  display: flex;
+  justify-content: center;
   padding-right: 1rem;
   padding-left: 1rem;
   background-color: #2f3347;
@@ -44,11 +46,15 @@ header {
 
 .contacts_button {
   margin: 0px;
-  padding: 0.7rem 1.4rem;
+  padding: 0.7rem 0.7rem;
 
   font-family: 'Montserrat', sans-serif;
   font-size: 1.2rem;
   font-weight: 600;
+  font-display: block;
+
+  max-height: 3rem;
+  min-width: 14rem;
 
   border-radius: 0.5rem;
   border-width: 0;
@@ -70,9 +76,23 @@ header {
 }
 
 .contacts_language {
+  display: flex;
   color: #f1f1f1;
   text-decoration: none;
+  justify-self: flex-end;
+  align-self: center;
+
+  margin-left: 1rem;
+  justify-content: center;
+  align-items: center;
+  max-width: 2rem;
 }
+
+.contacts_language img {
+  margin: auto;
+  width: 100%;
+}
+
 .contacts_language:hover {
   color: #4170fe;
   text-decoration: none;
@@ -378,6 +398,9 @@ main {
     display: none;
   }
 
+  /* .contacts_button {
+    font-size: smaller;
+  } */
   .info__wrapper {
     flex-direction: column;
     align-items: center;
