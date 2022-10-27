@@ -180,7 +180,7 @@ main {
 
   /* box-shadow: 2px 3px 0px #2f3347; */
   background-color: #f1f0f0;
-  background-size: auto;
+  background-size: contain;
 }
 
 .card1 {
