@@ -306,7 +306,8 @@ h2 {
   justify-content: space-between;
   row-gap: 3rem;
 
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   max-width: 1200px;
 }
 
@@ -339,6 +340,8 @@ h2 {
   width: 100%;
 }
 .footer {
+  margin-bottom: 0px;
+  margin-top: 0px;
   padding-top: 2rem;
   padding-bottom: 2rem;
   background-color: #2f3347;
@@ -466,7 +469,9 @@ h2 {
 .cards_divider {
   display: flex;
   align-items: center;
+  width: 100%;
 }
+
 .cards_divider h2 {
   min-width: fit-content;
   text-align: center;
@@ -482,6 +487,10 @@ h2 {
   width: 100%;
   height: 0.25rem;
   background-color: #4170fe;
+}
+
+.corpus_divider {
+  display: none;
 }
 
 @media all and (max-width: 1540px) {
@@ -524,6 +533,9 @@ h2 {
   padding-top: 0px;
   padding-bottom: 0px;
 
+  display: flex;
+  flex-direction: column;
+
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
@@ -540,6 +552,10 @@ h2 {
   }
   .big__icon {
     display: none;
+  }
+
+  .corpus_divider {
+    display: inline;
   }
 
   /* .contacts_button {
