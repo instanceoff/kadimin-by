@@ -34,7 +34,8 @@ header {
 }
 
 .container {
-  padding: 3rem 1rem;
+  padding: 0px 1rem;
+  margin: 3rem 0px;
 }
 
 .contacts {
@@ -149,7 +150,8 @@ main {
 .info__text {
   max-width: 55%;
 }
-.info__text h1 {
+.info__text h1,
+h2 {
   color: #4170fe;
   font-size: 2.5rem;
 }
@@ -304,9 +306,6 @@ main {
   justify-content: space-between;
   row-gap: 3rem;
 
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-
   margin: auto;
   max-width: 1200px;
 }
@@ -434,10 +433,6 @@ main {
   padding-bottom: 0.5rem;
 }
 
-.dropdown-content a:hover {
-  /* background-color: #f1f1f1; */
-}
-
 .dropdown:hover .dropdown-content {
   display: block;
 }
@@ -513,6 +508,26 @@ main {
     margin-left: 0rem;
   }
 }
+
+.corpus__wrapper {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.image_margin_right {
+  margin-left: 0px;
+  margin-right: 3rem;
+}
+
+.corpus_container {
+  height: fit-content;
+  padding-top: 0px;
+  padding-bottom: 0px;
+
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
 @media all and (max-width: 1080px) {
   :root {
     font-size: small;
