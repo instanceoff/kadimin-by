@@ -490,7 +490,8 @@ h2 {
 }
 
 .corpus_divider {
-  display: none;
+  margin: auto;
+  width: 1200px;
 }
 
 @media all and (max-width: 1540px) {
@@ -540,6 +541,11 @@ h2 {
   margin-bottom: 3rem;
 }
 
+@media all and (max-width: 1200px) {
+  .corpus_divider {
+    width: 100%;
+  }
+}
 @media all and (max-width: 1080px) {
   :root {
     font-size: small;
@@ -552,10 +558,6 @@ h2 {
   }
   .big__icon {
     display: none;
-  }
-
-  .corpus_divider {
-    display: inline;
   }
 
   /* .contacts_button {
